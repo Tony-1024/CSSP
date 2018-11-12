@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+
+
+
+<style>
+    #top a
+    {
+        height:5px;
+    }
+.page
+{
+    background-color: white;
+    color: black;
+
+}
+
+
+    #page1 #footer #a1, #a2, #a3, #a4
+    {
+        padding:15px;
+        padding-right: 35px;
+        margin-left: 30px;
+        width:5px;
+    }
+
+
+    .ui-mini
+    {
+        width:50px; !important;
+        padding: 15px;
+        text-align: center;
+        font-size: 10px;
+        background-color: transparent;
+
+
+    }
+
+
+    label
+    {
+        padding-bottom: 15px;
+    }
+
+
+
+    #welcome
+    {
+        margin:150px  ;
+    }
+
+    #settingsnav li
+    {
+        width:25%;
+    }
+#main
+{
+    margin-top:310px;
+}
+    #page1buttons a
+    {
+        background-color: aquamarine;
+        border-color: black;
+        border-width: 1px;
+        height:15px;
+        font-size: 12px;
+        text-align-all: center;
+    }
+
+    #page1 #footer
+    {
+        background-color: black;
+    }
+
+
+
+</style>
+<body>
+<div data-role="page" class="page" id="fp">
+    <div id="welcome"><p> Welcome!</p>
+        <p> Login as:</p>
+
+
+    <a href="#page1" class="ui-btn ui-mini " id="student">Student</a>
+        <a href="https://www.edu/" class="ui-btn ui-mini " id="guest">Guest</a>
+
+    </div>
+    </div>
+<div data-role="page" class="page"  id="page1">
+    <div data-role="header" data-position="inline">
+        <div data-role="navbar" id="top">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile" >profile</a></li>
+                <li><a href="#settings" data-icon="settings">settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+<div data-role="main" class="ui-content" id="main">
+
+
+</div>
+
+
+
+    <div data-role="footer"  id="footer">
+
+        <div data-role="navbar" id="page1buttons">
+            <ul>
+                <li><a href="#physical" class="ui-btn ui-icon-search ui-btn-icon-top">Physical</a></li>
+                <li><a href="#emotion"class="ui-btn ui-icon-search ui-btn-icon-top">Emotion</a></li>
+                <li><a href="#mental"class="ui-btn ui-icon-search ui-btn-icon-top">Mental</a></li>
+                <li><a href="#css"class="ui-btn ui-icon-search ui-btn-icon-top">Css</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="#social"class="ui-btn ui-icon-search ui-btn-icon-top">Social</a></li>
+                <li><a href="#env"class="ui-btn ui-icon-search ui-btn-icon-top">Env</a></li>
+                <li><a href="#occupation"class="ui-btn ui-icon-search ui-btn-icon-top">Occup</a></li>
+                <li><a href="#ass"class="ui-btn ui-icon-search ui-btn-icon-top">Asses</a></li>
+            </ul>
+
+
+        </div>
+
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus  " id="a1">TM</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus " id="a2">E</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus " id="a3">CSS</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus " id="a4">PR</a>
+
+
+    </div>
+    </div>
+
+<script type="text/javascript">
+/* $(document).on("pageshow", function(){
+	alert("a");
+}); */
+$.mobile.changePage('#physical');
+</script>
+<div data-role="page" class="page" id="physical">
+    <div data-role="header">
+        <h1>Physical</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile">profile</a></li>
+                <li><a href="#settings" data-icon="settings">settings</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div data-role="page" class="page" id="occupation">
+    <div data-role="header">
+        <h1>Occupation</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile">profile</a></li>
+                <li><a href="#" data-icon="settings">settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>GElloft again</p>
+    </div>
+
+</div>
+<div data-role="page" class="page" id="emotion">
+    <div data-role="header">
+        <h1>Emotion</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile">profile</a></li>
+                <li><a href="#" data-icon="settings">settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>GElloft again</p>
+    </div>
+
+</div>
+<div data-role="page" class="page" id="intell">
+    <div data-role="header">
+        <h1>Intellectual</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile">profile</a></li>
+                <li><a href="#" data-icon="settings">settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>GElloft again</p>
+    </div>
+
+</div>
+<div data-role="page" class="page" id="ass">
+    <div data-role="header">
+        <h1>Assessment</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile">profile</a></li>
+                <li><a href="#" data-icon="settings">settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>GElloft again</p>
+    </div>
+
+</div>
+<div data-role="page" class="page" id="social">
+    <div data-role="header">
+        <h1>Social</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile">profile</a></li>
+                <li><a href="#" data-icon="settings">settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>GElloft again</p>
+    </div>
+
+
+
+
+
+</div>
+<div data-role="page" class="page" id="mental">
+    <div data-role="header">
+        <h1>Mental</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile">profile</a></li>
+                <li><a href="#" data-icon="settings">settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>GElloft again</p>
+    </div>
+</div>
+
+<div data-role="page" class="page" id="css">
+    <div data-role="header">
+        <h1>CSS</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile">profile</a></li>
+                <li><a href="#" data-icon="settings">settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>GElloft again</p>
+    </div>
+</div>
+<div data-role="page" class="page" id="env">
+    <div data-role="header">
+        <h1>Environment</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="back" data-rel="back">back</a></li>
+
+                <li><a href="#" data-icon="profile">profile</a></li>
+                <li><a href="#" data-icon="settings">settings</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>GElloft again</p>
+    </div>
+
+</div>
+
+
+<div data-role="page" class="page" id="settings" >
+    <div data-role="header" data-position="fixed">
+        <h1>settings</h1>
+        <div data-role="navbar" id="settingsnav">
+            <ul>
+                <li><a href="#settings">Physical</a></li>
+                <li><a href="emotionsettings.html">Emotion</a></li>
+                <li><a href="mentalsettings.html">Mental</a></li>
+                <li><a href="csssettings.html">Css</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="socialsettings.html">Social</a></li>
+                <li><a href="envsettings.html">Env</a></li>
+                <li><a href="occupsettings.html">Occup</a></li>
+                <li><a href="assessettings.html">Asses</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div data-role="main" class="ui-content" id="settingsmain">
+
+</div>
+
+
+</div>
+
+</body>
+<script>
+    
+</script>
+</html>

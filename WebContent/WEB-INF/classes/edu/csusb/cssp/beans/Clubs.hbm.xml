@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="edu..cssp.beans.Clubs" table="clubs">
+      <meta attribute="class-description">
+         This class contains the club definitions of the system. 
+      </meta>
+      <id name="id">
+         <generator class="sequence"/>
+      </id>
+      <property name="name" column="name" type="string"/>
+      <property name="contact_name" column="contact_name" type="string"/>
+      <property name="phone_no" column="phone_no" type="string"/>
+      <property name="dimension_id" column="dimension_id" type="integer"/>
+   </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="edu..cssp.beans.Goal" table="goal">
+      <meta attribute="class-description">
+         This class contains the goal definitions of the system. 
+      </meta>
+      <id name="id">
+         <generator class="sequence"/>
+      </id>
+      <property name="name" column="name" type="string"/>
+      <property name="user_id" column="user_id" type="integer"/>
+      <property name="type" column="type" type="integer"/>
+      <property name="dimension_id" column="dimension_id" type="integer"/>
+      <property name="start_time" column="start_time" type="date"/>
+      <property name="planned_end_time" column="planned_end_time" type="date"/>
+      <property name="actual_end_time" column="actual_end_time" type="date"/>
+      <property name="progress" column="progress" type="float"/>
+      <property name="final_score" column="final_score" type="float"/>
+   </class>
+</hibernate-mapping>
